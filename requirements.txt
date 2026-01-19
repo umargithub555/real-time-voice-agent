@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-multipart
+websockets
+numpy
+soundfile
+torch
+librosa
+sounddevice
+faster-whisper
+google-genai
+soprano
+python-dotenv

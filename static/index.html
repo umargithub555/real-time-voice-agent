@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soprano Real-Time Agent</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🎙️ Real-Time Agent</div>
+            <div class="status-pill" id="status-pill">
+                <span class="status-dot"></span>
+                <span id="status-text">Disconnected</span>
+            </div>
+        </header>
+
+        <main class="chat-container">
+            <div id="messages" class="messages">
+                <div class="message bot">
+                    <div class="avatar">🤖</div>
+                    <div class="bubble">Hello! Click "Start Recording" to speak with me.</div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="controls">
+            <div class="visualizer" id="visualizer">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <button id="record-btn" class="btn-primary">
+                <span class="icon">🎙️</span>
+                <span class="label">Start Recording</span>
+            </button>
+        </footer>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
